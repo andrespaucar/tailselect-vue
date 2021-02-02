@@ -7,7 +7,7 @@ y ponemos en 'options' lo siguiente:
 ```  :options="{descriptions:true,multiShowCount:true,multiContainer:true}" ``` asi como estos valos 
 hay mucho más revisar del paquete oficial tail.select [link](https://www.npmjs.com/package/tail.select#default-options)
 > Requerda si defines como 'multiple' a la propiedad del componente TailSelect se tiene que definir en el 'v-model' un valor Array.
-```
+```js
 <TailSelect  multiple  v-model="selectedopt" :options="{locale:'en'}" >
     <option value="1">Value 1</option>
     <option value="2">Value 2</option>
@@ -15,17 +15,18 @@ hay mucho más revisar del paquete oficial tail.select [link](https://www.npmjs.
     <option value="4">Value 4</option>
 </TailSelect>
 ```
-### USE [plugin](blob/main/src/VueTailSelect.js) [component](blob/main/src/components/TailSelect.vue)
-```
+Config [plugin](blob/main/src/VueTailSelect.js) and [component](blob/main/src/components/TailSelect.vue)
+```js
 import VueTailSelect from "./VueTailSelect"
 Vue.use(VueTailSelect)
-...
-<VueTailSelect search  multiple  v-model="selectedopt" :options="{locale:'en'}">
+//...template
+<VueTailSelect v-model="selectedopt">
     <option v-for="(optionsselect,index) in optionsselects" 
         :key="index" :value="optionsselect.value">{{optionsselect.name}}
     </option>
 </VueTailSelect>
-...
+//..script
+selectedopt = 1
 optionsselects = [
     {value:'1', name: 'Value 1'},
     {value:'2', name: 'Value 2'},
