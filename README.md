@@ -1,9 +1,9 @@
 ## TailSelect Vue Component
-Si agrega como VALOR PROP 'multiple' esta ya un scaffolding de multiple por lo que no es necesario
-agregar en el VALOR PROP de 'option'. Ahora si queremos un 'multiple' personalizado, quitamos el VALOR PROP 'multiple' 
+Si agrega como valor prop 'multiple' esta ya esta predefinido los 'options' de 'multiple' por lo que no es necesario
+agregar en el valor prop de 'option'. Ahora si queremos un 'multiple' personalizado, quitamos el valor prop 'multiple' 
 y ponemos en 'options' lo siguiente:
 ```  :options="{descriptions:true,multiShowCount:true,multiContainer:true}" ``` asi como estos valos 
-hay mucho más revisar del paquete oficial tail.select [link](https://www.npmjs.com/package/tail.select#default-options)
+hay mucho más revisar del paquete oficial Tail.Select [link](https://www.npmjs.com/package/tail.select#default-options)
 > Requerda si defines como 'multiple' a la propiedad del componente TailSelect se tiene que definir en el 'v-model' un valor Array.
 
 ```js
