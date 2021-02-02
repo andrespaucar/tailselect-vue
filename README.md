@@ -15,7 +15,7 @@ hay mucho más revisar del paquete oficial tail.select [link](https://www.npmjs.
     <option value="4">Value 4</option>
 </TailSelect>
 ```
-Config [plugin](blob/main/src/VueTailSelect.js) and [component](blob/main/src/components/TailSelect.vue)
+Config [plugin](src/VueTailSelect.js) and [component](src/components/TailSelect.vue)
 ```js
 import VueTailSelect from "./VueTailSelect"
 Vue.use(VueTailSelect)
