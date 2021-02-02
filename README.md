@@ -16,20 +16,25 @@ hay mucho más revisar del paquete oficial tail.select [link](https://www.npmjs.
 </TailSelect>
 ```
 Config [plugin](src/VueTailSelect.js) and [component](src/components/TailSelect.vue)
+
+Main
 ```js
-//...main
 import VueTailSelect from "./VueTailSelect"
 Vue.use(VueTailSelect)
-//...template
+```
+Template
+```html
 <VueTailSelect v-model="selectedopt">
     <option v-for="(optionsselect,index) in optionsselects" 
         :key="index" :value="optionsselect.value">{{optionsselect.name}}
     </option>
 </VueTailSelect>
-//..script
+```
+Script
+```js
 data(){
     return{
-        selectedopt : 1
+        selectedopt : 1,
         optionsselects : [
             {value:'1', name: 'Value 1'},
             {value:'2', name: 'Value 2'},
@@ -39,5 +44,4 @@ data(){
         ]
     }
 }
-
 ```
