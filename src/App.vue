@@ -3,11 +3,6 @@
     <div >
         <label>TailSelect</label>
         <div style="width:450px;margin-top:.5rem">
-            <!-- <TailSelect search  multiple  v-model="selectedopt" :options="{locale:'en'}" >
-                    <option v-for="(optionsselect,index) in optionsselects" 
-                        :key="index" :value="optionsselect.value">{{optionsselect.name}}
-                    </option>
-            </TailSelect> -->
             <VueTailSelect search  multiple  v-model="selectedopt" :options="{locale:'en'}">
                 <option v-for="(optionsselect,index) in optionsselects" 
                     :key="index" :value="optionsselect.value">{{optionsselect.name}}

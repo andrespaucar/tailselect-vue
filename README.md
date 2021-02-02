@@ -15,3 +15,22 @@ hay mucho más revisar del paquete oficial tail.select [link](https://www.npmjs.
     <option value="4">Value 4</option>
 </TailSelect>
 ```
+### USE [plugin](blob/main/src/VueTailSelect.js) [component](blob/main/src/components/TailSelect.vue)
+```
+import VueTailSelect from "./VueTailSelect"
+Vue.use(VueTailSelect)
+...
+<VueTailSelect search  multiple  v-model="selectedopt" :options="{locale:'en'}">
+    <option v-for="(optionsselect,index) in optionsselects" 
+        :key="index" :value="optionsselect.value">{{optionsselect.name}}
+    </option>
+</VueTailSelect>
+...
+optionsselects = [
+    {value:'1', name: 'Value 1'},
+    {value:'2', name: 'Value 2'},
+    {value:'3', name: 'Value 3'},
+    {value:'4', name: 'Value 4'},
+    {value:'5', name: 'Value 5'}
+]
+```
