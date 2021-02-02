@@ -17,6 +17,7 @@ hay mucho más revisar del paquete oficial tail.select [link](https://www.npmjs.
 ```
 Config [plugin](src/VueTailSelect.js) and [component](src/components/TailSelect.vue)
 ```js
+//...main
 import VueTailSelect from "./VueTailSelect"
 Vue.use(VueTailSelect)
 //...template
@@ -26,12 +27,17 @@ Vue.use(VueTailSelect)
     </option>
 </VueTailSelect>
 //..script
-selectedopt = 1
-optionsselects = [
-    {value:'1', name: 'Value 1'},
-    {value:'2', name: 'Value 2'},
-    {value:'3', name: 'Value 3'},
-    {value:'4', name: 'Value 4'},
-    {value:'5', name: 'Value 5'}
-]
+data(){
+    return{
+        selectedopt : 1
+        optionsselects : [
+            {value:'1', name: 'Value 1'},
+            {value:'2', name: 'Value 2'},
+            {value:'3', name: 'Value 3'},
+            {value:'4', name: 'Value 4'},
+            {value:'5', name: 'Value 5'}
+        ]
+    }
+}
+
 ```
